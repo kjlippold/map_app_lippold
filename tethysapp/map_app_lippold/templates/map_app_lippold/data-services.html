@@ -1,0 +1,28 @@
+{% extends "map_app_lippold/base.html" %}
+{% load tethys_gizmos %}
+
+{% block header_buttons %}
+{% endblock %}
+
+{% block app_content %}
+  <h5>Data Services</h5>
+  <p>Utah County DEM Layer</p>
+  <ul>
+    <li>The Utah County DEM layer is our raster layer. We'll be using it with the cut fill tool to help design trenches, and it will be the primary input for the app.</li>
+    <li>This data was obtained from  the <a href="https://gis.utah.gov/data/elevation-and-terrain/" target="_blank">Utah AGRC</a> website.</li>
+    <li>Link: <a href="http://geoserver2.byu.edu/arcgis/rest/services/PawneeRangers/DEM/MapServer" target="_blank">http://geoserver2.byu.edu/arcgis/rest/services/PawneeRangers/DEM/MapServer</a></li>
+  </ul>
+  <p>Utah County Municipalities Layer</p>
+  <ul>
+    <li>The Utah County Municipalities layer is our vector layer. We might display it in the final map, but it's not necessary for our calculations. However, the app will produce vector data as part of its output.</li>
+    <li>This data was obtained from  the <a href="https://gis.utah.gov/data/boundaries/citycountystate/" target="_blank">Utah AGRC</a> website.</li>
+    <li>Link: <a href="http://geoserver2.byu.edu/arcgis/rest/services/PawneeRangers/Municipalities/MapServer" target="_blank">http://geoserver2.byu.edu/arcgis/rest/services/PawneeRangers/Municipalities/MapServer</a></li>
+  </ul>
+{% endblock %}
+
+{# Use the after_app_content block for modals #}
+{% block after_app_content %}
+{% endblock %}
+
+{% block app_actions %}
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "map_app_lippold/base.html" %}
+{% load tethys_gizmos %}
+
+{% block header_buttons %}
+{% endblock %}
+
+{% block app_navigation_items %}
+  {{ block.super }}
+  <li class="title">Map Layers</li>
+  <li>
+    <div id="dem-check" class="checkbox">
+      <label><input checked id="dem" type="checkbox" value="">DEM Layer</label>
+    </div>
+  </li>
+  <li>
+    <div id="mun-check" class="checkbox">
+      <label><input checked id="municipalities" type="checkbox" value="">Municipalities Layer</label>
+    </div>
+  </li>
+{% endblock %}
+
+{% block app_content %}
+  <style></style>
+  <div id="viewDiv" class="map" style="margin-left: -15px; margin-right: -15px; margin-top: -20px; margin-bottom: -500px; width:-webkit-fill-available; height:626px;"></div> 
+{% endblock %}
+
+{# Use the after_app_content block for modals #}
+{% block after_app_content %}
+{% endblock %}
+
+{% block app_actions %}
+{% endblock %}
