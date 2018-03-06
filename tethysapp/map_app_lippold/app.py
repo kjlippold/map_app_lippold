@@ -54,6 +54,11 @@ class MapAppLippold(TethysAppBase):
                 url='map-app-lippold/mockups',
                 controller='map_app_lippold.controllers.mockups'
             ),
+            UrlMap(
+                name='gizmos',
+                url='map-app-lippold/gizmos',
+                controller='map_app_lippold.controllers.gizmos'
+            ),
         )
 
         return url_maps

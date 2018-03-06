@@ -19,6 +19,7 @@
   {% url 'map_app_lippold:about' as about_url %}
   {% url 'map_app_lippold:mockups' as mockups_url %}
   {% url 'map_app_lippold:proposal' as proposal_url %}
+  {% url 'map_app_lippold:gizmos' as gizmos_url %}
   <li class="title">Navigation</li>
   <li class="{% if request.path == home_url %}active{% endif %}"><a href="{{ home_url }}">Home</a></li>
   <li class="{% if request.path == map_view_url %}active{% endif %}"><a href="{{ map_view_url }}">Map View</a></li>
@@ -26,6 +27,7 @@
   <li class="{% if request.path == about_url %}active{% endif %}"><a href="{{ about_url }}">About</a></li>
   <li class="{% if request.path == mockups_url %}active{% endif %}"><a href="{{ mockups_url }}">Mockups</a></li>
   <li class="{% if request.path == proposal_url %}active{% endif %}"><a href="{{ proposal_url }}">Proposal</a></li>
+  <li class="{% if request.path == gizmos_url %}active{% endif %}"><a href="{{ gizmos_url }}">Gizmos</a></li>
 {% endblock %}
 
 {% block app_content %}
