@@ -4,6 +4,7 @@ from tethys_sdk.gizmos import Button
 from tethys_sdk.gizmos import DatePicker
 from tethys_sdk.gizmos import TextInput
 from tethys_sdk.gizmos import RangeSlider
+import tethys
 
 
 @login_required()
